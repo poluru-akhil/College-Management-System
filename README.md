@@ -132,21 +132,21 @@ Fee Payment   Records student fee payments
 
 Fields
 
-Field                    Data Type         Example
+Field                    
 
-Department Name          Text              Computer Science
-
-
-Department Code          Text              CSE
+Department Name                 
 
 
-HOD Name                 Text               Kumar
+Department Code          
 
 
-Department Email         Email              cse@college.com
+HOD Name                 
 
 
-Phone                    Phone               9876543210
+Department Email         
+
+
+Phone                    
 
 
 Department Status   Picklist    Active / Inactive
