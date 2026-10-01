@@ -185,58 +185,62 @@ Address                 Text Area               Nellore
 
 Fields
 
-Field           Data Type   Example
+Field           
 
-Course Name     Text        Salesforce Administration
-Course Code     Text        SF101
-Department      Lookup      Computer Science
-Credits         Number      4
-Course Type     Picklist    Core / Elective / Practical / Project
-Course Status   Picklist    Active / Inactive
+Course Name 
+
+Course Code  
+
+Department   
+
+Credits 
+
+Course Type  
+
+Course Status   
 
 # 7. Faculty
 
 Fields
 
-Field                   Data Type               Example
+Field                   De
 
-Faculty Name            Text                    Kumar
+Faculty Name           
 
-Employee ID             Text                    EMP001
+Employee ID             
 
-Email                   Email                   kumar@college.com
+Email                  
 
-Phone                   Phone                   9876543210
+Phone                   
 
-Department              Lookup                  Computer Science
+Department              
 
-Designation             Picklist                Professor / Associate
-Professor / Assistant
-Professor / Lecturer
+Designation            
 
-Joining Date            Date                    01-06-2025
+Joining Date
 
-Faculty Status          Picklist                Active / Inactive
+Faculty Status         
 
-8. Enrollment
+# 8. Enrollment
 
 The Enrollment object records which courses a student has enrolled
 in.
 
 Fields
 
-Field               Data Type       Example
+Field               
 
-Enrollment Number   Auto Number     ENR-0001
-Student             Master-Detail   Rahul Kumar
-Course              Lookup          Salesforce Administration
-Enrollment Date     Date            01-07-2026
-Semester            Picklist        1--6
-Academic Year       Text            2026-27
-Status              Picklist        Enrolled / Completed / Dropped
-Marks               Number          75
-Grade               Picklist        A / B / C / D / F
-Result              Formula         Pass / Fail
+Enrollment Number
+
+Student
+
+Course 
+
+Enrollment Date 
+
+Semester      
+
+Marks               
 
 Result Formula
 
@@ -248,49 +252,63 @@ Marks = 75 → Pass
 
 Marks = 30 → Fail
 
-9. Attendance
+# 9. Attendance
 
 The Attendance object records attendance for a student in a course.
 
 Fields
 
-Field               Data Type     Example
+Field              
 
-Attendance Number   Auto Number   ATT-0001
-Student             Lookup        Rahul Kumar
-Course              Lookup        Salesforce Administration
-Faculty             Lookup        Kumar
-Attendance Date     Date          30-09-2026
-Attendance Status   Picklist      Present / Absent / Leave
-Remarks             Text Area     Attended full class
+Attendance Number   
 
-10. Fee Payment
+Student          
+
+Course             
+
+Faculty            
+
+Attendance Date     
+
+Attendance Status  
+
+Remarks             
+
+# 10. Fee Payment
 
 The Fee Payment object records payments made by students.
 
 Fields
 
-Field                   Data Type               Example
+Student 
 
-Payment Number          Auto Number             PAY-0001
+Payment Number          
 
-Student                 Master-Detail           Rahul Kumar
+Payment Date            
 
-Payment Date            Date                    30-09-2026
+Amount                  
 
-Amount                  Currency                25000
+Payment Type            
 
-Payment Type            Picklist                Tuition Fee / Exam Fee
-/ Library Fee / Hostel
-Fee / Other
+Payment Status          
 
-Payment Status          Picklist                Paid / Pending / Failed
+Transaction ID 
 
-Academic Year           Text                    2026-27
+# Schema Builder
 
-Transaction ID          Text                    TXN12345
+Schema Builder is used to visually view the objects and relationships.
 
-11. Relationships
+The main objects displayed are:
+
+Department
+Student
+Course
+Faculty
+Enrollment
+Attendance
+Fee Payment
+
+# 11. Relationships
 
 Relationship            Type            Purpose
 
@@ -302,7 +320,7 @@ Course → Enrollment     Lookup          Connect enrollment to course
 Student → Attendance    Lookup          Store student attendance
 Course → Attendance     Lookup          Connect attendance to course
 Faculty → Attendance    Lookup          Connect attendance to faculty
-Student → Fee Payment   Master-Detail   Store student fee payments
+Student → Fee Payment  
 
 # 13. Picklists and Multi-Select Picklists
 
@@ -339,7 +357,7 @@ Salesforce
 HTML
 JavaScript
 
-14. Global Value Sets
+# Global Value Sets
 
 Global Value Sets can be used when the same picklist values need to be
 reused.
@@ -352,20 +370,20 @@ Payment Status
 
 This keeps picklist values consistent across objects.
 
-16. Page Layouts
+# 16. Page Layouts
 
 Page layouts organize fields so users can easily enter and view
 information.
 
-Student Page Layout Sections
+.Student Page Layout Sections
 
-Student Information
+.Student Information
 
-Academic Information
+.Academic Information
 
-Address Information
+.Address Information
 
-17. Record Types
+# 17. Record Types
 
 Two Student record types are used:
 
@@ -375,7 +393,7 @@ Existing student
 
 Different page layouts can be assigned to these record types.
 
-18. Validation Rules
+# 18. Validation Rules
 
 Rule 1: Fee Amount must be greater than 0
 
@@ -396,7 +414,7 @@ Error message:
 
 Transaction ID is required when Payment Status is Paid.
 
-19. Duplicate and Matching Rules
+# 19. Duplicate and Matching Rules
 
 A Student Matching Rule can be created using the Email field.
 
@@ -432,12 +450,12 @@ College Administrator
 Faculty
 
 
-Permission Set
+# Permission Set
 
 A permission set such as Faculty Additional Access can provide extra
 permissions to selected faculty users without changing their profile.
 
-21. Activities
+# . Activities
 
 Salesforce Activities used in the project include:
 
@@ -459,7 +477,7 @@ Example:
 
 Called Rahul regarding fee payment.
 
-22. Global Action
+# 22. Global Action
 
 New Student Enquiry
 
@@ -480,14 +498,14 @@ Department
 
 Admission Year
 
-23. Object-Specific Action
+# 23. Object-Specific Action
 
 Schedule Meeting
 
 A Student object-specific action can be used to schedule a meeting
 directly from a Student record.
 
-24. Email Template
+# 24. Email Template
 
 Fee Payment Confirmation
 
@@ -511,7 +529,7 @@ Thank you.
 Regards,
 College Finance Department
 
-25. Record-Triggered Flow
+# 25. Record-Triggered Flow
 
 A Record-Triggered Flow is used for the fee payment confirmation.
 
@@ -544,7 +562,7 @@ Student receives confirmation
 This means that when a fee payment becomes Paid, Salesforce
 automatically sends the payment confirmation email.
 
-26. Reports
+# 26. Reports
 
 The project includes reports such as:
 
@@ -566,7 +584,7 @@ Shows collected fee amounts.
 
 Shows fee payments whose status is Pending.
 
-27. Dashboard
+# 27. Dashboard
 
 Dashboard Name
 
@@ -606,7 +624,7 @@ Fee Payment
 
 It helps administrators understand how the objects are connected.
 
-30. Setup Audit Trail
+ # Setup Audit Trail
 
 Setup Audit Trail can be used to check Salesforce configuration changes.
 
@@ -622,7 +640,7 @@ Validation rule creation
 
 Permission changes
 
-31. Lightning Experience
+# 31. Lightning Experience
 
 The project is built using Salesforce Lightning Experience.
 
@@ -646,7 +664,7 @@ Reports
 
 Dashboards
 
-32. Final Project Architecture
+# 32. Final Project Architecture
 
                  COLLEGE MANAGEMENT SYSTEM
                            |
@@ -676,7 +694,7 @@ Student → Attendance ← Course
 
 Student → Fee Payment
 
-35. Conclusion
+# 35. Conclusion
 
 The College Management System combines Salesforce Administration
 features into one practical project.
