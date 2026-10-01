@@ -115,8 +115,8 @@ Student ---- Enrollment ---- Course
    +---- Attendance ---- Course / Faculty
    |
    +---- Fee Payment
-
-3. Custom Objects
+   
+# Objects
 
 Object        Purpose
 
@@ -313,16 +313,24 @@ Fee Payment
 Relationship            Type            Purpose
 
 Department → Student    Lookup          Assign students to departments
+
 Department → Course     Lookup          Assign courses to departments
+
 Department → Faculty    Lookup          Assign faculty to departments
+
 Student → Enrollment    Master-Detail   Store student enrollments
+
 Course → Enrollment     Lookup          Connect enrollment to course
+
 Student → Attendance    Lookup          Store student attendance
+
 Course → Attendance     Lookup          Connect attendance to course
+
 Faculty → Attendance    Lookup          Connect attendance to faculty
+
 Student → Fee Payment  
 
-# 13. Picklists and Multi-Select Picklists
+#  Picklists and Multi-Select Picklists
 
 The project uses picklists for:
 
@@ -370,7 +378,7 @@ Payment Status
 
 This keeps picklist values consistent across objects.
 
-# 16. Page Layouts
+#  Page Layouts
 
 Page layouts organize fields so users can easily enter and view
 information.
@@ -383,7 +391,7 @@ information.
 
 .Address Information
 
-# 17. Record Types
+#  Record Types
 
 Two Student record types are used:
 
@@ -393,7 +401,7 @@ Existing student
 
 Different page layouts can be assigned to these record types.
 
-# 18. Validation Rules
+#  Validation Rules
 
 Rule 1: Fee Amount must be greater than 0
 
@@ -414,7 +422,7 @@ Error message:
 
 Transaction ID is required when Payment Status is Paid.
 
-# 19. Duplicate and Matching Rules
+# Duplicate and Matching Rules
 
 A Student Matching Rule can be created using the Email field.
 
@@ -431,7 +439,7 @@ Email: rahul@gmail.com
 
 → Salesforce shows duplicate warning
 
-# 20. Users, Profiles and Permission Sets
+#  Users, Profiles and Permission Sets
 
 Users
 
@@ -477,7 +485,7 @@ Example:
 
 Called Rahul regarding fee payment.
 
-# 22. Global Action
+# Global Action
 
 New Student Enquiry
 
@@ -498,14 +506,14 @@ Department
 
 Admission Year
 
-# 23. Object-Specific Action
+# Object-Specific Action
 
 Schedule Meeting
 
 A Student object-specific action can be used to schedule a meeting
 directly from a Student record.
 
-# 24. Email Template
+#  Email Template
 
 Fee Payment Confirmation
 
@@ -529,7 +537,7 @@ Thank you.
 Regards,
 College Finance Department
 
-# 25. Record-Triggered Flow
+#  Record-Triggered Flow
 
 A Record-Triggered Flow is used for the fee payment confirmation.
 
@@ -562,7 +570,7 @@ Student receives confirmation
 This means that when a fee payment becomes Paid, Salesforce
 automatically sends the payment confirmation email.
 
-# 26. Reports
+#  Reports
 
 The project includes reports such as:
 
@@ -584,7 +592,7 @@ Shows collected fee amounts.
 
 Shows fee payments whose status is Pending.
 
-# 27. Dashboard
+# Dashboard
 
 Dashboard Name
 
