@@ -100,50 +100,7 @@ Reports
 
 Dashboards
 
-Setup Audit Trail
-
-34. Testing Checklist
-
-Before presenting the project, verify:
-
-Department records can be created.
-
-Students can be created and linked to departments.
-
-Courses can be created and linked to departments.
-
-Faculty can be created and linked to departments.
-
-Students can be enrolled in courses.
-
-Marks validation works.
-
-Result formula shows Pass or Fail.
-
-Attendance records can be created.
-
-Fee payments can be created.
-
-Amount validation works.
-
-Transaction ID is required when Payment Status is Paid.
-
-Fee Payment Flow is activated.
-
-Payment confirmation email is sent when payment becomes Paid.
-
-Duplicate student email warning works.
-
-Reports display correct records.
-
-Dashboard displays the required components.
-
-Setup Audit Trail shows configuration changes.
-
-The College Management System combines Salesforce Administration
-features into one practical project.
-
-2. Main Business Flow
+# 2. Main Business Flow
 
 Department
    |
@@ -401,6 +358,7 @@ Address Information
 17. Record Types
 
 Two Student record types are used:
+
 New Student
 
 Existing student
@@ -463,7 +421,6 @@ College Administrator
 
 Faculty
 
-Finance Staff
 
 Permission Set
 
@@ -623,8 +580,7 @@ Student Status
 
 The dashboard gives college administrators a quick view of important
 information.
-
-29. Schema Builder
+ Schema Builder
 
 Schema Builder is used to visually view the objects and relationships.
 
@@ -709,120 +665,6 @@ Student → Attendance ← Course
                   Faculty
 
 Student → Fee Payment
-
-33. Salesforce Admin Concepts Demonstrated
-
-This project demonstrates:
-
-Custom Objects
-
-Custom Fields
-
-Custom App
-
-Lightning Experience
-
-Console Navigation
-
-Schema Builder
-
-Lookup Relationship
-
-Master-Detail Relationship
-
-Roll-Up Summary
-
-Formula Fields
-
-Text Fields
-
-Text Area
-
-Rich Text Area
-
-Picklists
-
-Multi-Select Picklists
-
-Global Value Sets
-
-Dependent Picklists
-
-Page Layouts
-
-Record Types
-
-Validation Rules
-
-Duplicate Rules
-
-Matching Rules
-
-Users
-
-Profiles
-
-Permission Sets
-
-Tasks
-
-Events
-
-Log a Call
-
-Global Actions
-
-Object-Specific Actions
-
-Email Templates
-
-Record-Triggered Flow
-
-Data Import Wizard
-
-Reports
-
-Dashboards
-
-Setup Audit Trail
-
-34. Testing Checklist
-
-Before presenting the project, verify:
-
-Department records can be created.
-
-Students can be created and linked to departments.
-
-Courses can be created and linked to departments.
-
-Faculty can be created and linked to departments.
-
-Students can be enrolled in courses.
-
-Marks validation works.
-
-Result formula shows Pass or Fail.
-
-Attendance records can be created.
-
-Fee payments can be created.
-
-Amount validation works.
-
-Transaction ID is required when Payment Status is Paid.
-
-Fee Payment Flow is activated.
-
-Payment confirmation email is sent when payment becomes Paid.
-
-Duplicate student email warning works.
-
-Reports display correct records.
-
-Dashboard displays the required components.
-
-Setup Audit Trail shows configuration changes.
 
 35. Conclusion
 
